@@ -31,7 +31,6 @@ public class ButtonManager : MonoBehaviour
         if (m_IsButtonDowning)
         {
             RectTransformUtility.ScreenPointToLocalPointInRectangle(myCanvas.transform as RectTransform, Input.mousePosition, myCanvas.worldCamera, out Mpos);
-            
             Mpos = myCanvas.transform.TransformPoint(Mpos);
             Vector2 zeros = myCanvas.transform.TransformPoint(zero.transform.localPosition);
             
